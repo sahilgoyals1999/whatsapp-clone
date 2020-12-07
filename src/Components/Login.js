@@ -10,7 +10,6 @@ function Login() {
 	const signIn = () => {
 		auth.signInWithPopup(provider)
 		.then(result => {
-			console.log("restulr" , result);
 			dispatch({
 				type: actionType.SET_USER,
 				user: result.user
